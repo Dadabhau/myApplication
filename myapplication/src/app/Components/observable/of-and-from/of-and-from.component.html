@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 pt-3">
+      <h2>Of and From</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Ex - 01 (OF)</strong>
+      <p class="border p-2 mt-2 rounded bg-light">
+        <strong>Data:</strong> of('Dadabhau', 'Vedshree', 'Arayan', 'Atharv',
+        'Parth')
+      </p>
+      <div class="card" style="width: 100%">
+        <div class="card-header">Response Data</div>
+        <ul id="elContainer" class="list-group list-group-flush"></ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <strong>Ex - 02 (OF)</strong>
+      <p class="border p-2 mt-2 rounded bg-light">
+        <strong>Data:</strong> of( &#123; a:'Dadabhau', b:'Vedshree',
+        c:'Arayan', d:'Atharv', e:'Parth' &#125; )
+      </p>
+      <div class="card" style="width: 100%">
+        <div class="card-header">Response Data</div>
+        <!-- <ul id="elContainer2" class="list-group list-group-flush"></ul> -->
+        <ul id="" class="list-group list-group-flush">
+          <li class="list-group-item">a: {{ obsMsg.a }}</li>
+          <li class="list-group-item">b: {{ obsMsg.b }}</li>
+          <li class="list-group-item">c: {{ obsMsg.c }}</li>
+          <li class="list-group-item">d: {{ obsMsg.d }}</li>
+          <li class="list-group-item">e: {{ obsMsg.e }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row pt-3">
+    <div class="col-md-4">
+      <strong>Ex - 01 (FROM) with Array</strong>
+      <p class="border p-2 mt-2 rounded bg-light">
+        <strong>Data:</strong> from(['Dada', 'Vedshree', 'Arayan', 'Atharv',
+        'Parth','Bhau'])
+      </p>
+      <div class="card" style="width: 100%">
+        <div class="card-header">Response Data</div>
+        <ul id="elContainer3" class="list-group list-group-flush"></ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 02 (FROM) with Promise</strong>
+      <p class="border p-2 mt-2 rounded bg-light">
+        <strong>Data:</strong> from(promise)
+      </p>
+      <div class="card" style="width: 100%">
+        <div class="card-header">Response Data</div>
+        <ul id="elContainer4" class="list-group list-group-flush"></ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 03 (FROM) with String</strong>
+      <p class="border p-2 mt-2 rounded bg-light">
+        <strong>Data:</strong> from('Welcome to My Application')
+      </p>
+      <div class="card" style="width: 100%">
+        <div class="card-header">Response Data</div>
+        <ul id="elContainer5" class="list-group list-group-flush"></ul>
+      </div>
+    </div>
+  </div>
+</div>

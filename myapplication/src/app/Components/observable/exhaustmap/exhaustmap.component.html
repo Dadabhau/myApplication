@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 pt-3">
+      <h2>ExhaustMap</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Save Data</h4>
+      <hr />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-success" (click)="btnClick()">Save Data</button>
+    </div>
+    <div class="col-md-6">
+      <div class="card" style="width: 100%">
+        <div class="card-header">Response Data</div>
+        <ul id="elContainer1" class="list-group list-group-flush">
+          <li class="list-group-item">Save Request: {{ num }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

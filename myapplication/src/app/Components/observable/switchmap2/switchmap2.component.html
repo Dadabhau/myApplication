@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 pt-3">
+      <h2>SwitchMap 2</h2>
+      <br />
+      <h5>Search Uxtrendz Videos</h5>
+      <form #searchform="ngForm">
+        <input
+          type="text"
+          required
+          name="searchTerm"
+          class="form-control"
+          autocomplete="off"
+          ngModel
+        />
+      </form>
+
+      <br />
+      <hr />
+      <div class="results">
+        <div class="d-flex">
+          <h5>Search results</h5>
+          <span class="ml-auto text-muted">5 result found...</span>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Thumbnail</th>
+              <th scope="col">Title & Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                <img
+                  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                  width="40"
+                />
+              </td>
+              <td>
+                <strong>
+                  Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+                </strong>
+                <p>
+                  Your perfect pack for everyday use and walks in the forest.
+                  Stash your laptop (up to 15 inches) in the padded sleeve, your
+                  everyday
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

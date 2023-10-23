@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 pt-3">
+      <h2>Async Subject</h2>
+      <hr />
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <h4 class>Add Video</h4>
+      <input type="text" class="form-control mb-3" #video />
+    </div>
+    <div class="col-md-3">
+      <h4 class>&nbsp;</h4>
+      <button class="btn btn-success" (click)="onVideoAdd(video)">
+        Add video
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 pt-2">
+      <strong>User - 01</strong>
+      <div class="card" style="width: 100%">
+        <!-- <div class="card-header">Response Data</div> -->
+        <ul id="" class="list-group list-group-flush">
+          <li class="list-group-item">Video: {{ asyncVideoEmit }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 pt-2">
+      <strong>click to Complete</strong>
+      <div class="card" style="width: 100%">
+        <!-- <div class="card-header">Response Data</div> -->
+        <!-- <ul id="" class="list-group list-group-flush">
+          <li *ngFor="let item of user2List" class="list-group-item">
+            Video: value
+          </li>
+        </ul> -->
+      </div>
+      <button class="btn mt-2 btn-success" (click)="completeSucess()">
+        Completed Subcription
+      </button>
+    </div>
+  </div>
+</div>

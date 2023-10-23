@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 pt-3">
+      <h2>Filter</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex - 01</strong>
+      <p class="border p-2 mt-2 rounded bg-light">
+        <strong>Filter:</strong> by lenght
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data">
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- <p>
+        Message: <strong class="text-success">{{ msg1 }}</strong>
+      </p> -->
+      <!-- <div class="card" style="width: 100%">
+        <div class="card-header">Response Data</div>
+        <ul id="elContainer" class="list-group list-group-flush"></ul>
+      </div> -->
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 02</strong>
+      <p class="border p-2 mt-2 rounded bg-light">
+        <strong>Flter:</strong> by Gender
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data2">
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.gender }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <p>
+        Message: <strong class="text-success">{{ msg2 }}</strong>
+      </p> -->
+      <!-- <div class="card" style="width: 100%">
+        <div class="card-header">Response Data</div>
+        <ul id="elContainer" class="list-group list-group-flush"></ul>
+      </div> -->
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 03</strong>
+      <p class="border p-2 mt-2 rounded bg-light">
+        <strong>Filter:</strong> by nth Item
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data3">
+            <td>{{ item.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <div class="card" style="width: 100%">
+        <div class="card-header">Response Data</div>
+        <ul id="elContainer" class="list-group list-group-flush"></ul>
+      </div> -->
+    </div>
+  </div>
+</div>
